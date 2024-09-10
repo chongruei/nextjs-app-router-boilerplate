@@ -54,6 +54,7 @@
     "node": ">=20.0.0",
     "pnpm": ">=9.10.0"
   },
+  "packageManager": "pnpm@9.10.0",
   "pnpm": {
     "overrides": {
       "react": "^18.2.0",
