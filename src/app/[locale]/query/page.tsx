@@ -8,6 +8,9 @@ type Props = {
   params: { locale: string }
 }
 
+export const dynamic = 'force-static'
+export const revalidate = 600
+
 export default function QueryPage({ params: { locale } }: Props) {
   unstable_setRequestLocale(locale)
 
