@@ -105,83 +105,15 @@ docker-compose -f docker-compose.yml up
 
 To get started with development in Visual Studio Code, open the workspace file named `nextjs-app-router-boilerplate.code-workspace`.
 
+### I18n with next-intl
+
+For internationalization (i18n), we use the `next-intl` package. It provides comprehensive support for localization in Next.js applications.
+
 We recommend installing the following extensions for a better development experience:
 
 - [Auto Import](https://marketplace.visualstudio.com/items?itemName=steoates.autoimport)
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
-- [Import Cost](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost)
 - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-- [Tabnine AI Autocomplete](https://marketplace.visualstudio.com/items?itemName=TabNine.tabnine-vscode)
 - [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
-- [Console Ninja](https://console-ninja.com/)
 
-For Console Ninja, add the following settings to your `settings.json` file in VSCode:
-
-```json
-{
-  "console-ninja.toolsToEnableSupportAutomaticallyFor": {
-    "live-server-extension": true,
-    "live-preview-extension": true
-  },
-  "console-ninja.allowedHosts": ["localhost:3000", "localhost"]
-}
-```
-
-## Project Structure
-
-Here's an overview of the project structure:
-
-```plaintext
-- public
-  - assets
-- src
-  - app
-  - components
-    - layout
-  - hooks
-  - model
-  - services
-  - styles
-  - script
-  - config
-  - utils
-  - store
-```
-
-## Development Rules
-
-### File Naming
-
-- Use camel case for file names.
-
-### Creating New Pages
-
-To create a new page, follow this structure:
-
-```
-📁 nextjs-app-router-boilerplate
-    📁 app
-        💾 page.tsx
-        💾 globals.css
-        💾 _error.tsx 
-        💾 index.tsx
-        💾 about.tsx
-        📁 <= place new page files here
-```
-
-### I18n with next-intl
-
-For internationalization (i18n), we use the `next-intl` package. It provides comprehensive support for localization in Next.js applications.
-
-### Tailwind CSS
-
-We use Tailwind CSS for styling. Here are some useful features:
-
-- [Responsive design](https://tailwindcss.com/docs/responsive-design): Use breakpoint prefixes such as `mobile`, `tablet`, and `desktop` to apply styles based on different screen sizes.
-- [Arbitrary values](https://tailwindcss.com/docs/adding-custom-styles): Customize your classes with arbitrary values.
-- [Changing opacity](https://tailwindcss.com/docs/ring-color#changing-the-opacity): Adjust the opacity of elements.
-
-### SEO
-
-We recommend using the Next.js [generate-metadata](https://nextjs.org/docs/app/api-reference/functions/generate-metadata).
