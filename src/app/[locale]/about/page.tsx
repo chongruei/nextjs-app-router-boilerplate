@@ -7,6 +7,8 @@ type Props = {
   params: { locale: string }
 }
 
+export const dynamic = 'force-static'
+
 export default function ConfigPage({ params: { locale } }: Props) {
   unstable_setRequestLocale(locale)
 

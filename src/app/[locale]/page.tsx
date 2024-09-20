@@ -3,6 +3,8 @@ import { unstable_setRequestLocale } from 'next-intl/server'
 
 import PageLayout from '@/components/pageLayout'
 
+export const dynamic = 'force-static'
+
 type Props = {
   params: { locale: string }
 }

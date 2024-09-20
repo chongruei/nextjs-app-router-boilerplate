@@ -6,6 +6,8 @@ import TodoList from '@/components/todoList'
 
 import { env } from '@/config/env'
 
+export const dynamic = 'force-static'
+
 type Props = {
   params: { locale: string }
 }
